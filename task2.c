@@ -11,6 +11,9 @@ char ch;
    int  characters =0;
    int  words = 0;
    int   lines = 0;
+   int flag = 1;
+
+       //Check Char
     while ((ch = fgetc(fp)) != EOF)
     {
         characters++;
@@ -20,20 +23,18 @@ char ch;
             lines++;
 
         // Check words 
-        if (ch == ' ' || ch == '\t' || ch == '\n' || ch == '\0')
-            words++;
+        if (ch == ' ' || ch == '\t' || ch == '\n' || ch == '\0'){
+
+            flag =1;
+
+    }
+    	else if(flag ==1 ){
+   	 	words++;
+		flag =0 ;
+    }
     }
 
-    // Increment words and lines for last word
-    if (characters > 0)
-    {
-
-
-        words++;
-        lines++;
-    }
-
-
+   
     printf("Total characters = %d\n", characters);
     printf("Total words      = %d\n", words);
     printf("Total lines      = %d\n", lines);
