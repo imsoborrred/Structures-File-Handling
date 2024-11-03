@@ -1,4 +1,4 @@
-Objectives
+ # Objectives
 
     1-Understanding Structures: Define what structures are in C and their significance in organizing data.
     2-User-Defined Data Types: Explore the necessity of user-defined data types and their advantages in programming.
@@ -9,4 +9,4 @@ Objectives
     7-Error Handling in File Operations: Implement error handling techniques during file operations to ensure robust code.
     8-String Manipulation: Practice string manipulation techniques, such as reversing strings, counting characters, and replacing substrings within a file.
 
-   # use Makefile to compile and run
+   #use Makefile to compile and run
